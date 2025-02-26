@@ -8,8 +8,10 @@ int main(int argc, char** argv){
 
     lattice L(dimensions, mesh_size);
 
-    //std::cout << L.get_f << std::endl;
-
+for(int i=0; i<mesh_size[0]*mesh_size[1]*mesh_size[2]; i++){
+    auto testnode = L.get_node(i);
+    std::cout << testnode.get_f()[0] << testnode.get_f()[1] << testnode.get_f()[2] << std::endl;
+}
     return 0;
 
 }

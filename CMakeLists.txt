@@ -42,8 +42,7 @@ add_definitions(-DPROJECT_SOURCE_DIR="${PROJECT_SOURCE_DIR}")
 
 #Link the lib, include and source libraries with the main library
 target_link_libraries(CellBM PUBLIC 
-    src
-    
+    src    
     OpenMP::OpenMP_CXX
 )
 

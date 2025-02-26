@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/lattice.cpp.o
+/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/lattice.cpp.o CMakeFiles/src.dir/node.cpp.o
 /usr/bin/ranlib libsrc.a

@@ -134,6 +134,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_vector.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stl_bvector.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/vector.tcc \
+ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/array \
+ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/compare \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/filesystem \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/fs_fwd.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/system_error \
@@ -212,4 +214,5 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include/omp.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/iostream \
  /mnt/home/heilman7/CellBM/include/lattice.hpp \
- /mnt/home/heilman7/CellBM/include/header.hpp
+ /mnt/home/heilman7/CellBM/include/header.hpp \
+ /mnt/home/heilman7/CellBM/include/node.hpp

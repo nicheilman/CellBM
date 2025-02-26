@@ -5,6 +5,8 @@ CMakeFiles/CellBM.dir/main.cpp.o
  /mnt/home/heilman7/CellBM/main.cpp
  /mnt/home/heilman7/CellBM/include/header.hpp
  /mnt/home/heilman7/CellBM/include/lattice.hpp
+ /mnt/home/heilman7/CellBM/include/node.hpp
+ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/array
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/backward/binders.h
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bit
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/alloc_traits.h
@@ -86,6 +88,7 @@ CMakeFiles/CellBM.dir/main.cpp.o
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cerrno
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/clocale
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/codecvt
+ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/compare
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstddef
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstdint
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstdio

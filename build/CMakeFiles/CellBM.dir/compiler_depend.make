@@ -4,6 +4,8 @@
 CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
   /mnt/home/heilman7/CellBM/include/header.hpp \
   /mnt/home/heilman7/CellBM/include/lattice.hpp \
+  /mnt/home/heilman7/CellBM/include/node.hpp \
+  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/array \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/backward/binders.h \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bit \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/alloc_traits.h \
@@ -85,6 +87,7 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cerrno \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/clocale \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/codecvt \
+  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/compare \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstddef \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstdint \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/cstdio \
@@ -354,11 +357,17 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/libintl.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/predefined_ops.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/asm-generic/errno.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/shared_ptr.h:
 
@@ -408,11 +417,11 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/istream:
 
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/functional_hash.h:
+
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/basic_ios.tcc:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -438,19 +447,11 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/invoke.h:
 
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/basic_string.tcc:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/charconv.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/ostream_insert.h:
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/functexcept.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/basic_ios.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/type_traits:
-
-/usr/include/asm-generic/errno.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/errno.h:
 
@@ -466,6 +467,16 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/alloc_traits.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/ext/string_conversions.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/allocator.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/refwrap.h:
+
+/mnt/home/heilman7/CellBM/include/lattice.hpp:
+
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/ptr_traits.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/locale_facets_nonio.tcc:
@@ -476,29 +487,31 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/basic_string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/ext/string_conversions.h:
+/usr/include/libintl.h:
 
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/ratio:
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/predefined_ops.h:
 
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/debug/assertions.h:
-
-/usr/include/stdc-predef.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/sstream.tcc:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/allocator.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/refwrap.h:
-
-/mnt/home/heilman7/CellBM/include/lattice.hpp:
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/array:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/new_allocator.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/stdexcept:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/chrono.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/basic_string.tcc:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/ostream_insert.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/charconv.h:
+
+/mnt/home/heilman7/CellBM/include/node.hpp:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/debug/assertions.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/ratio:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/char_traits.h:
 
@@ -544,13 +557,9 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/cxxabi_forced.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/functexcept.h:
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/sstream.tcc:
 
 /usr/include/pthread.h:
 
@@ -601,6 +610,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/streambuf_iterator.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/stringfwd.h:
+
+/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/compare:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/sstream:
 
@@ -665,8 +676,6 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/ostream:
-
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 

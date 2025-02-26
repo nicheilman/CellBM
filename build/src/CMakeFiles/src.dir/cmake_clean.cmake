@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/lattice.cpp.o"
   "CMakeFiles/src.dir/lattice.cpp.o.d"
+  "CMakeFiles/src.dir/node.cpp.o"
+  "CMakeFiles/src.dir/node.cpp.o.d"
   "libsrc.a"
   "libsrc.pdb"
 )

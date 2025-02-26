@@ -1,11 +1,12 @@
 
 #include "header.hpp"
+#include "node.hpp"
 
 class lattice{
 
     protected:
 
-    std::vector<int> node_lst_;
+    std::vector<node> node_lst_;
 
     public:
 
@@ -16,7 +17,7 @@ class lattice{
     lattice& operator=(lattice&& c) = delete;      //move assignment operator 
 
 
-    lattice( std::vector<float> dimensions, 
+    lattice( std::vector<float> domain_size, 
 	std::vector<int> mesh_size );
 
     auto get_node(int node_id){return node_lst_[node_id];};
