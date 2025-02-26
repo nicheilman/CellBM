@@ -1,0 +1,1141 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The system is: Linux - 5.15.0-126-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/home/heilman7/CellBM/build/CMakeFiles/3.27.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/home/heilman7/CellBM/build/CMakeFiles/3.27.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2af02/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2af02.dir/build.make CMakeFiles/cmTC_2af02.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe'
+        Building C object CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -c /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2af02.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccMlCkdZ.s
+        GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include
+         /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0fa84ea813a0fed0f03b3299e0adf421
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/'
+         as -v --64 -o CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o /tmp/ccMlCkdZ.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_2af02
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2af02.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc  -v -rdynamic CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -o cmTC_2af02 
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc
+        COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2af02' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2af02.'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZP4BTL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2af02 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2af02' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2af02.'
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2af02/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2af02.dir/build.make CMakeFiles/cmTC_2af02.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-JSRcUe']
+        ignore line: [Building C object CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc   -v -o CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -c /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/']
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2af02.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccMlCkdZ.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0fa84ea813a0fed0f03b3299e0adf421]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o /tmp/ccMlCkdZ.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_2af02]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2af02.dir/link.txt --verbose=1]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc  -v -rdynamic CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -o cmTC_2af02 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2af02' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2af02.']
+        link line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZP4BTL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2af02 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZP4BTL.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2af02] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_2af02.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_048e5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_048e5.dir/build.make CMakeFiles/cmTC_048e5.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G'
+        Building CXX object CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -c /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_048e5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccRdpBzF.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include
+         /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 74aafbd80854a31a06517682ab2ae764
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRdpBzF.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_048e5
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_048e5.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++  -v -rdynamic CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_048e5 
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++
+        COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_048e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_048e5.'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccd4A8ZI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_048e5 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_048e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_048e5.'
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+          add: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/backward]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        collapse include dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/x86_64-pc-linux-gnu;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/backward;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_048e5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_048e5.dir/build.make CMakeFiles/cmTC_048e5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-pJb55G']
+        ignore line: [Building CXX object CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++   -v -o CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -c /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/']
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_048e5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccRdpBzF.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 74aafbd80854a31a06517682ab2ae764]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRdpBzF.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_048e5]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_048e5.dir/link.txt --verbose=1]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++  -v -rdynamic CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_048e5 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_048e5' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_048e5.']
+        link line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccd4A8ZI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_048e5 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccd4A8ZI.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_048e5] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o] ==> obj [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_048e5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o] ==> obj [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60cb7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_60cb7.dir/build.make CMakeFiles/cmTC_60cb7.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT'
+        Building C object CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT/OpenMPTryFlag.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_60cb7.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccwRVGaQ.s
+        GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include
+         /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0fa84ea813a0fed0f03b3299e0adf421
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o /tmp/ccwRVGaQ.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_60cb7
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60cb7.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc  -fopenmp -v -rdynamic CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -o cmTC_60cb7  -v 
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc
+        COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        Reading specs from /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_60cb7' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_60cb7.'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOORsNy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60cb7 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_60cb7' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_60cb7.'
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60cb7/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_60cb7.dir/build.make CMakeFiles/cmTC_60cb7.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT']
+        ignore line: [Building C object CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT/OpenMPTryFlag.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/']
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-XSb4WT/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_60cb7.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccwRVGaQ.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0fa84ea813a0fed0f03b3299e0adf421]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o /tmp/ccwRVGaQ.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_60cb7]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60cb7.dir/link.txt --verbose=1]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc  -fopenmp -v -rdynamic CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -o cmTC_60cb7  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_60cb7' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_60cb7.']
+        link line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOORsNy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60cb7 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadend.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccOORsNy.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_60cb7] ==> ignore
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_60cb7.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9372e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9372e.dir/build.make CMakeFiles/cmTC_9372e.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF'
+        Building CXX object CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_9372e.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccULUwlj.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"
+        ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include
+         /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 74aafbd80854a31a06517682ab2ae764
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o /tmp/ccULUwlj.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_9372e
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9372e.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++  -fopenmp -v -rdynamic CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -o cmTC_9372e  -v 
+        Using built-in specs.
+        COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++
+        COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/
+        Reading specs from /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9372e' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9372e.'
+         /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHobq50.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9372e /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9372e' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9372e.'
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9372e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_9372e.dir/build.make CMakeFiles/cmTC_9372e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/']
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-mHiEAF/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_9372e.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccULUwlj.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../include/c++/13.2.0/backward]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include]
+        ignore line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 74aafbd80854a31a06517682ab2ae764]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o /tmp/ccULUwlj.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_9372e]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9372e.dir/link.txt --verbose=1]
+        ignore line: [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++  -fopenmp -v -rdynamic CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -o cmTC_9372e  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold --enable-ld=default --prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --with-local-prefix=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0 --enable-bootstrap --with-isl=/tmp/grosscra/easybuild/easybuild/build/GCCcore/13.2.0/system-system/gcc-13.2.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/:/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/:/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9372e' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9372e.']
+        link line: [ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2 -plugin /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHobq50.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9372e /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtbegin.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadbegin.o -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0 -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib -L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib -L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../.. CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtend.o /lib/x86_64-linux-gnu/crtn.o /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/crtoffloadend.o]
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/libexec/gcc/x86_64-pc-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccHobq50.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9372e] ==> ignore
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+          arg [-L/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..]
+          arg [CMakeFiles/cmTC_9372e.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib/../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../../../lib64] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib] ==> [/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib] ==> [/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib]
+        collapse library dir [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/../../..] ==> [/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib64;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib64;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/software-current/2023.06/x86_64/generic/software/libarchive/3.7.2-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/XZ/5.4.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/cURL/8.3.0-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/amd/zen2/software/OpenSSL/1.1/lib;/opt/software-current/2023.06/x86_64/generic/software/bzip2/1.0.8-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/zlib/1.2.13-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/ncurses/6.4-GCCcore-13.2.0/lib;/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da6cc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da6cc.dir/build.make CMakeFiles/cmTC_da6cc.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT'
+        Building C object CMakeFiles/cmTC_da6cc.dir/OpenMPCheckVersion.c.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc   -fopenmp -o CMakeFiles/cmTC_da6cc.dir/OpenMPCheckVersion.c.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT/OpenMPCheckVersion.c
+        Linking C executable cmTC_da6cc
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da6cc.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/cc  -fopenmp -rdynamic CMakeFiles/cmTC_da6cc.dir/OpenMPCheckVersion.c.o -o cmTC_da6cc 
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-7OUedT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/share/cmake-3.27/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "src/CMakeLists.txt:21 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie"
+      binary: "/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie'
+        
+        Run Build Command(s): /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7c035/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7c035.dir/build.make CMakeFiles/cmTC_7c035.dir/build
+        gmake[1]: Entering directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie'
+        Building CXX object CMakeFiles/cmTC_7c035.dir/OpenMPCheckVersion.cpp.o
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++   -fopenmp -o CMakeFiles/cmTC_7c035.dir/OpenMPCheckVersion.cpp.o -c /mnt/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_7c035
+        /opt/software-current/2023.06/x86_64/generic/software/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c035.dir/link.txt --verbose=1
+        /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++  -fopenmp -rdynamic CMakeFiles/cmTC_7c035.dir/OpenMPCheckVersion.cpp.o -o cmTC_7c035 
+        gmake[1]: Leaving directory '/mnt/ffs24/home/heilman7/CellBM/build/CMakeFiles/CMakeScratch/TryCompile-Etm5Ie'
+        
+      exitCode: 0
+...
