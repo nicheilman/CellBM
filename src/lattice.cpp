@@ -3,12 +3,13 @@
 
 lattice::lattice(
 
-    const std::vector<int> node_lst
+	std::vector<float> dimensions,
+        std::vector<int> mesh_size
 
 )
 
 {
-    node_lst_ = node_lst;
+    //node_lst_ = node_lst;
 }
 
 

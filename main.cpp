@@ -3,10 +3,12 @@
 
 int main(int argc, char** argv){
 
-    const std::vector<int> node_lst = {0,0,0};
-    lattice L(node_lst);
+    std::vector<float> dimensions = {1.0, 1.0, 1.0};
+    std::vector<int> mesh_size = {3, 3, 3};
 
-    std::cout << L.get_node(1) << std::endl;
+    lattice L(dimensions, mesh_size);
+
+    //std::cout << L.get_f << std::endl;
 
     return 0;
 
