@@ -17,7 +17,7 @@ class lattice{
     lattice& operator=(lattice&& c) = delete;      //move assignment operator 
 
 
-    lattice( std::vector<float> domain_size, 
+    lattice( std::vector<double> domain_size, 
 	std::vector<int> mesh_size );
 
     auto get_node(int node_id){return node_lst_[node_id];};

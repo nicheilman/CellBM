@@ -2,12 +2,12 @@
 #include "header.hpp"
 
 
-class node{
+class node: public std::enable_shared_from_this<node>{
 
     protected:
     
     const int velo_dim = 19;
-    std::array<double, 3> f_ = {0., 0., 0.};
+    std::array<double, 3> f_ = {1., 1., 1.};
     std::array<double, 19> m_;
 
     public:
