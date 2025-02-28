@@ -9,7 +9,7 @@ int main(int argc, char** argv){
     lattice L(dimensions, mesh_size);
 
 for(auto& node_ : L.get_nodes() ){ //  int i=0; i<mesh_size[0]*mesh_size[1]*mesh_size[2]; i++){
-    std::cout << std::fixed << std::setprecision(1) << node_->get_f()[0] << ", " << node_->get_f()[1] << ", " << node_->get_f()[2] << std::endl;
+    std::cout << std::fixed << std::setprecision(1) << node_->get_pos()[0] << ", " << node_->get_pos()[1] << ", " << node_->get_pos()[2] << std::endl;
 
     //std::cout << std::fixed << std::setprecision(1) << L.get_node(i)->get()->get_f()[0] << ", " << L.get_node(i)->get()->get_f()[1] << ", " << L.get_node(i)->get()->get_f()[2] << std::endl;
 }
