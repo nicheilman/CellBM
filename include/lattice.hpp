@@ -6,7 +6,7 @@ class lattice{
 
     protected:
 
-    std::vector<node> node_lst_;
+    std::vector<std::unique_ptr<node>> node_lst_ = {};
 
     public:
 
@@ -20,7 +20,7 @@ class lattice{
     lattice( std::vector<double> domain_size, 
 	std::vector<int> mesh_size );
 
-    auto get_node(int node_id){return node_lst_[node_id];};
+    auto& get_nodes(){return node_lst_;};
 
 
 };
