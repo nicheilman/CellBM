@@ -1,6 +1,7 @@
 
 #include "header.hpp"
 
+class lattice;
 
 class node: public std::enable_shared_from_this<node>{
 
@@ -27,7 +28,7 @@ class node: public std::enable_shared_from_this<node>{
     auto get_m(){return m_;};
     std::vector<double> get_pos(){return {dx_, dy_, dz_};};
 
-    std::vector<double> generate_moment();
+    double generate_moment(lattice* L);
 
 };
 

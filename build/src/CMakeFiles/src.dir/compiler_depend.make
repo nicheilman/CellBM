@@ -236,6 +236,7 @@ src/CMakeFiles/src.dir/lattice.cpp.o: /mnt/home/heilman7/CellBM/src/lattice.cpp 
 
 src/CMakeFiles/src.dir/node.cpp.o: /mnt/home/heilman7/CellBM/src/node.cpp \
   /mnt/home/heilman7/CellBM/include/header.hpp \
+  /mnt/home/heilman7/CellBM/include/lattice.hpp \
   /mnt/home/heilman7/CellBM/include/node.hpp \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/array \
   /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/backward/binders.h \

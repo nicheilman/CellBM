@@ -1,5 +1,5 @@
 
-#include "node.hpp"
+#include "lattice.hpp"
 
 node::node(const double dx, const double dy, const double dz, int wall_flag){
 
@@ -13,9 +13,12 @@ dz_ = dz;
 
 //--------------------------------------------------------------------------------//
 
-std::vector<double> node::generate_moment(){
+double node::generate_moment(lattice* L){
 
-return {0};
+auto test = L->evector;
+
+
+return test[5][1];
 
 }
 

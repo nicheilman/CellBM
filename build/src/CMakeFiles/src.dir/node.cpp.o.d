@@ -1,5 +1,5 @@
 src/CMakeFiles/src.dir/node.cpp.o: /mnt/home/heilman7/CellBM/src/node.cpp \
- /usr/include/stdc-predef.h /mnt/home/heilman7/CellBM/include/node.hpp \
+ /usr/include/stdc-predef.h /mnt/home/heilman7/CellBM/include/lattice.hpp \
  /mnt/home/heilman7/CellBM/include/header.hpp \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/string \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/requires_hosted.h \
@@ -213,4 +213,5 @@ src/CMakeFiles/src.dir/node.cpp.o: /mnt/home/heilman7/CellBM/src/node.cpp \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/fs_dir.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/bits/fs_ops.h \
  /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include/omp.h \
- /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/iostream
+ /opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/include/c++/13.2.0/iostream \
+ /mnt/home/heilman7/CellBM/include/node.hpp
