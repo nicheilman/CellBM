@@ -4,8 +4,8 @@
 
 lattice::lattice(
 
-	std::vector<double> domain_size,
-        std::vector<int> mesh_size
+	double domain_size[3],
+        int mesh_size[3]
 
 )
 

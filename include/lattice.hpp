@@ -7,6 +7,7 @@ class lattice{
     protected:
 
     std::vector<std::unique_ptr<node>> node_lst_ = {};
+    
 
     public:
 
@@ -17,8 +18,8 @@ class lattice{
     lattice& operator=(lattice&& c) = delete;      //move assignment operator 
 
 
-    lattice( std::vector<double> domain_size, 
-	std::vector<int> mesh_size );
+    lattice( double domain_size[], 
+	int mesh_size[] );
 
     auto& get_nodes(){return node_lst_;};
 
