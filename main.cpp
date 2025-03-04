@@ -11,11 +11,11 @@ int main(int argc, char** argv){
 for(auto& node_ : L.get_nodes() ){ //  int i=0; i<mesh_size[0]*mesh_size[1]*mesh_size[2]; i++){
     //std::cout << std::fixed << std::setprecision(1) << node_->get_pos()[0] << ", " << node_->get_pos()[1] << ", " << node_->get_pos()[2] << std::endl;
 
-    
-
-    int i=0;
-    std::cout << node_->generate_moment(&L) << ", " << std::endl;; // test->generate_moment(L.evector**);
-    i++;
+    node_->generate_moment(&L);
+for(int i=0; i<19; i++){
+    std::cout << node_->get_m()[i] << ", "; // test->generate_moment(L.evector**);
+  }
+    std::cout << std::endl;
 }
     return 0;
 

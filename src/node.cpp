@@ -13,12 +13,17 @@ dz_ = dz;
 
 //--------------------------------------------------------------------------------//
 
-double node::generate_moment(lattice* L){
+void node::generate_moment(lattice* L){
 
-auto test = L->evector;
+std::fill(std::begin(m_), std::end(m_), 0);
 
+for(int i=0; i<19; i++){
+	for(int j=0; j<19; j++){
+		m_[i] += L->evector[i][j] * f_[j];
+	}
+}
 
-return test[5][1];
+return;
 
 }
 
