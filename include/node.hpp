@@ -8,9 +8,10 @@ class node: public std::enable_shared_from_this<node>{
     protected:
     
     const int velo_dim = 19;
-    std::array<double, 19> f_; 
-    std::array<double, 19> m_;
+    std::array<double, 19> f_, f_tmp, m_, meq, tau; 
+    //std::array<double, 19> ;
     double dx_, dy_, dz_; 
+    double m2;
     int wallflag_;
 
     public:
@@ -27,8 +28,11 @@ class node: public std::enable_shared_from_this<node>{
     auto get_f(){return f_;};
     auto get_m(){return m_;};
     std::vector<double> get_pos(){return {dx_, dy_, dz_};};
+    auto get_wallflag(){return wallflag_;};
 
     void ftom(lattice* L, bool flag);
+    void calc_eq();
+    void collision();
 
 };
 

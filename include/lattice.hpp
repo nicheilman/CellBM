@@ -67,5 +67,7 @@ static constexpr double inv_evector[19][19] ={ {48,  0,  0,  0,-72, 0,  0,  0,  
     auto& get_nodes(){return node_lst_;};
     auto get_evector(int i, int j){return evector[i][j];};
 
+    void stream();
+
 };
 

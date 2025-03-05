@@ -10,23 +10,34 @@ int main(int argc, char** argv){
 
     lattice L(dimensions, mesh_size);
 
+for(int t=0; t<5; t++){
+
 for(auto& node_ : L.get_nodes() ){ //  
 
-    //node_->ftom(&L, 1);
+    node_->ftom(&L, 0);
+
+    node_->calc_eq();
+
+    node_->collision();
+
+    node_->ftom(&L, 1);
 
 
 for(int i=0; i<19; i++){
     std::cout << node_->get_m()[i] << ", "; // 
   }
     std::cout << std::endl;
-for(int i=0; i<19; i++){
+
+
+/*for(int i=0; i<19; i++){
     std::cout << node_->get_f()[i] << ", "; // 
   }
     std::cout << std::endl;
-
-}
-
-    return 0;
+*/
+        }
+    }
+    
+return 0;
 
 }
 

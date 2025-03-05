@@ -19,15 +19,26 @@ lattice::lattice(
     for(int i=0; i<mesh_size[0]; i++){
         for(int j=0; j<mesh_size[1]; j++){
             for (int k=0; k<mesh_size[2]; k++){
-		//std::unique_ptr<node> node_ = std::make_unique<node>();
-                //node_(i,j,k,0);
-		node_lst_.push_back(std::make_unique<node>(i*mesh_x,j*mesh_y,k*mesh_z,0));
+		if(i==0 || j==0 || k==0 || i==(mesh_size[0]-1) || j==(mesh_size[1]-1) || k==(mesh_size[2]-1) )
+		    node_lst_.push_back(std::make_unique<node>(i*mesh_x,j*mesh_y,k*mesh_z,1));
+		else
+		    node_lst_.push_back(std::make_unique<node>(i*mesh_x,j*mesh_y,k*mesh_z,0));
             }
         }
     }
 
 
     //node_lst_ = node_lst;
+}
+//----------------------------------------------------------------------------------------//
+
+void lattice::stream(){
+
+for(auto& node_ : get_nodes() ){
+return;
+}
+
+return;
 }
 
 
