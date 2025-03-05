@@ -8,7 +8,7 @@ class node: public std::enable_shared_from_this<node>{
     protected:
     
     const int velo_dim = 19;
-    std::array<double, 19> f_; // = {1., 2., 3.};
+    std::array<double, 19> f_; 
     std::array<double, 19> m_;
     double dx_, dy_, dz_; 
     int wallflag_;
@@ -28,7 +28,7 @@ class node: public std::enable_shared_from_this<node>{
     auto get_m(){return m_;};
     std::vector<double> get_pos(){return {dx_, dy_, dz_};};
 
-    void generate_moment(lattice* L);
+    void ftom(lattice* L, bool flag);
 
 };
 
