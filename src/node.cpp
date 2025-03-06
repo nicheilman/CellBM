@@ -10,6 +10,7 @@ tau = {5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
 dx_ = dx;
 dy_ = dy;
 dz_ = dz;
+wallflag_ = wall_flag;
 
 }
 

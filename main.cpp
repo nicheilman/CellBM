@@ -6,11 +6,11 @@ int main(int argc, char** argv){
  std::cout << std::fixed << std::setprecision(3);
 
     double dimensions[3] = {1.0, 1.0, 1.0};
-    int mesh_size[3] = {2, 2, 2};
+    int mesh_size[3] = {3, 3, 3};
 
     lattice L(dimensions, mesh_size);
 
-for(int t=0; t<5; t++){
+for(int t=0; t<1; t++){
 
 for(auto& node_ : L.get_nodes() ){ //  
 
@@ -21,22 +21,25 @@ for(auto& node_ : L.get_nodes() ){ //
     node_->collision();
 
     node_->ftom(&L, 1);
+}
 
     L.stream();
 
-for(int i=0; i<19; i++){
-    std::cout << node_->get_m()[i] << ", "; // 
-  }
-    std::cout << std::endl;
+for(auto& node_ : L.get_nodes()){
 
+    node_->update_f();
+}
 
-/*for(int i=0; i<19; i++){
-    std::cout << node_->get_f()[i] << ", "; // 
-  }
-    std::cout << std::endl;
-*/
-        }
+for(auto& node_ : L.get_nodes()){
+ 
+if(!node_->get_wallflag()){
+    for(int i=0; i<3; i++){
+        std::cout << node_->get_pos()[i] << ", " << ", "; // 
+      }
+        std::cout << node_->get_wallflag() << ", " << std::endl;
+      }
     }
+  }
     
 return 0;
 

@@ -31,6 +31,7 @@ class node: public std::enable_shared_from_this<node>{
     auto get_wallflag(){return wallflag_;};
 
     void set_f(std::shared_ptr<node> node_, int i){f_tmp[i] = node_->get_f()[i]; return;};
+    void update_f(){f_ = f_tmp; return;};
 
     void ftom(lattice* L, bool flag);
     void calc_eq();
