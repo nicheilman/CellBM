@@ -1,1 +1,1 @@
-/opt/software-current/2023.06/x86_64/generic/software/GCCcore/13.2.0/bin/c++ -rdynamic CMakeFiles/CellBM.dir/main.cpp.o -o CellBM  src/libsrc.a -lgomp -Wl,-Bstatic -lpthread -Wl,-Bdynamic 
+/opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ -rdynamic CMakeFiles/CellBM.dir/main.cpp.o -o CellBM  src/libsrc.a -lgomp -Wl,-Bstatic -lpthread -Wl,-Bdynamic 

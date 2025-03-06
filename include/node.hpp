@@ -30,6 +30,8 @@ class node: public std::enable_shared_from_this<node>{
     std::vector<double> get_pos(){return {dx_, dy_, dz_};};
     auto get_wallflag(){return wallflag_;};
 
+    void set_f(std::shared_ptr<node> node_, int i){f_tmp[i] = node_->get_f()[i]; return;};
+
     void ftom(lattice* L, bool flag);
     void calc_eq();
     void collision();

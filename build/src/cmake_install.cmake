@@ -39,6 +39,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/opt/software-current/2023.06/x86_64/amd/zen2/software/binutils/2.40-GCCcore-12.3.0/bin/objdump")
 endif()
 

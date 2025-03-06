@@ -22,6 +22,7 @@ for(auto& node_ : L.get_nodes() ){ //
 
     node_->ftom(&L, 1);
 
+    L.stream();
 
 for(int i=0; i<19; i++){
     std::cout << node_->get_m()[i] << ", "; // 
