@@ -8,9 +8,9 @@ class lattice{
 
     protected:
 
-    int num_dir = 19;
-    int mesh_size[3];
-    double domain_size[3];
+    const int num_dir = 19;
+    int* mesh_size_;
+    double* domain_size_;
     int num_nodes;
 
     std::vector<std::shared_ptr<node>> node_lst_ = {};
@@ -86,11 +86,13 @@ static constexpr int c_i[19][3] = { { 0, 0, 0},  // 0
     lattice& operator=(lattice&& c) = delete;      //move assignment operator 
 
 
-    lattice( double domain_size[], 
-	int mesh_size[] );
+    lattice( double domain_size[3], 
+	int mesh_size[3] );
 
     auto& get_nodes(){return node_lst_;};
     auto get_evector(int i, int j){return evector[i][j];};
+    int bd_flip(int i, int j){int flip_c[3];for(int k=0;k<3;k++) flip_c[k] = c_i[i][k]; flip_c[j] = -1*flip_c[j]; return **std::find(std::begin(c_i), std::end(c_i), flip_c);};
+    //int bd_flip(int i);
 
     void stream();
 

@@ -1,16 +1,17 @@
 
 #include "lattice.hpp"
 
-node::node(const double dx, const double dy, const double dz, int wall_flag){
+node::node(const double dx, const double dy, const double dz, int wall_flag, int idx){
 
-f_ = {1., 1., 0., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
-m_ = {1., 1., 1., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
+f_ = {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
+m_ = {1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
 f_tmp = f_;
-tau = {5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
+lambda = {0, 0, 0, 0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2};
 dx_ = dx;
 dy_ = dy;
 dz_ = dz;
 wallflag_ = wall_flag;
+idx_ = idx;
 
 }
 
@@ -61,10 +62,10 @@ return;
 }
 //--------------------------------------------------------------------//
 
-void node::collision(){
+void node::collision(double dt){
 
 for(int i=0; i<velo_dim; i++)
-	m_[i] += -1.0 * (m_[i] - meq[i]) / tau[i];
+	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i];
 
 return;
 }
