@@ -39,63 +39,69 @@ lattice::lattice(
 void lattice::stream(){
 
 for(auto& node_ : node_lst_ ){
-    if(node_->get_wallflag() == 0 ){
+    if(node_->get_wallflag() != 2 ){
 	for(int i=1; i<num_dir; i++){ 
-	    int nb_index = (node_->get_idx() - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes; //Stride length to neighboring nodes
+	    int nb_index = (num_nodes + node_->get_idx() - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes; //Stride length to neighboring nodes
 	    node_->set_f( node_lst_[nb_index], i );
         }
     }
-/*else{
+else{
     if(node_->get_pos()[0] == 0.){ 
 	    for(int i=1; i<num_dir; i++){
-		if(c_i[i][0] == 1){
-		    int nb_index = (num_nodes + c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
-		    node_->set_f(node_, bd_flip(i, 0) ); //lst_[nb_index], i);
+		if(c_i[i][0] == -1){
+		    node_->set_f_bd(i, bd_flip(i, 0) );
 		}
+		    int nb_index = (num_nodes + node_->get_idx() - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
+		    node_->set_f( node_lst_[nb_index], i );
 	    }
         }
     else if(node_->get_pos()[0] == domain_size_[0]){ 
             for(int i=1; i<num_dir; i++){
-                if(c_i[i][0] == -1){
-                    int nb_index = (num_nodes + c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
-                    node_->set_f(node_, bd_flip(i, 0));
+                if(c_i[i][0] == 1){
+                    node_->set_f_bd(i, bd_flip(i, 0));
                 }
+		    int nb_index = (num_nodes + node_->get_idx() - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
+            	    node_->set_f( node_lst_[nb_index], i );
             }
         }
-    else if(node_->get_pos()[1] == 0.){
-            for(int i=1; i<num_dir; i++){
-                if(c_i[i][1] == 1){
-                    int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] + c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
-                    node_->set_f(node_, bd_flip(i, 1));
-                }
-            }
-        }
-    else if(node_->get_pos()[1] == domain_size_[1]){
+/*    else if(node_->get_pos()[1] == 0.){
             for(int i=1; i<num_dir; i++){
                 if(c_i[i][1] == -1){
                     int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] + c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
                     node_->set_f(node_, bd_flip(i, 1));
+                }
+                    //node_->set_f_bd(i);
+            }
+        }
+    else if(node_->get_pos()[1] == domain_size_[1]){
+            for(int i=1; i<num_dir; i++){
+                if(c_i[i][1] == 1){
+                    int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] + c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes;
+                    node_->set_f(node_, bd_flip(i, 1));
 		}
+                    //node_->set_f_bd(i);
 	    }
 	}
 if(node_->get_pos()[2] == 0.){
-            for(int i=1; i<num_dir; i++){
-                if(c_i[i][2] == 1){
-                    int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] + c_i[i][2]) % num_nodes;
-                    node_->set_f(node_, bd_flip(i, 2));
-                }
-            }
-        }
-    else if(node_->get_pos()[2] == domain_size_[1]){
             for(int i=1; i<num_dir; i++){
                 if(c_i[i][2] == -1){
                     int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] + c_i[i][2]) % num_nodes;
                     node_->set_f(node_, bd_flip(i, 2));
                 }
+                    //node_->set_f_bd(i);
             }
         }
-
-    }*/
+    else if(node_->get_pos()[2] == domain_size_[1]){
+            for(int i=1; i<num_dir; i++){
+                if(c_i[i][2] == 1){
+                    int nb_index = (num_nodes - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] + c_i[i][2]) % num_nodes;
+                    node_->set_f(node_, bd_flip(i, 2));
+                }
+                    //node_->set_f_bd(i);
+            }
+        }
+*/
+    }
 }
 
 return;

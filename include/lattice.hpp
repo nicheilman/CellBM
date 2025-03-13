@@ -92,7 +92,6 @@ static constexpr int c_i[19][3] = { { 0, 0, 0},  // 0
     auto& get_nodes(){return node_lst_;};
     auto get_evector(int i, int j){return evector[i][j];};
     int bd_flip(int i, int j){int flip_c[3];for(int k=0;k<3;k++) flip_c[k] = c_i[i][k]; flip_c[j] = -1*flip_c[j]; return **std::find(std::begin(c_i), std::end(c_i), flip_c);};
-    //int bd_flip(int i);
 
     void stream();
 

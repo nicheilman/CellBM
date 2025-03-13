@@ -36,6 +36,13 @@ for(int i=0; i<19; i++){
                 f_[i] +=   (L->inv_evector[i][j] * m_[j]) / 144;
         }
     }
+std::fill(std::begin(f_eq), std::end(f_eq), 0);
+
+for(int i=0; i<19; i++){
+        for(int j=0; j<19; j++){
+                f_eq[i] +=   (L->inv_evector[i][j] * meq[j]) / 144;
+        }
+    }
 }
 
 return;
@@ -65,7 +72,9 @@ return;
 void node::collision(double dt){
 
 for(int i=0; i<velo_dim; i++)
-	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i];
+	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i] * 50;
+
+if(dz_ == 0) m_[6] = -1;
 
 return;
 }
