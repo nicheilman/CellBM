@@ -72,11 +72,10 @@ return;
 void node::collision(double dt){
 
 for(int i=0; i<velo_dim; i++)
-	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i] * 50;
-
-if(dz_ == 0) m_[6] = -1;
+	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i];
 
 return;
+
 }
 
 

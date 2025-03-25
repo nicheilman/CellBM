@@ -14,6 +14,8 @@ class node: public std::enable_shared_from_this<node>{
     double m2;
     int wallflag_, idx_;
 
+    static constexpr double wk[19] = {3., 18., 18., 18., 18., 18., 18., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36.};
+
     public:
 
     node() = default;                         //default constructor
@@ -32,7 +34,7 @@ class node: public std::enable_shared_from_this<node>{
     int get_idx(){return idx_;};
 
     void set_f(std::shared_ptr<node> node_, int i){f_tmp[i] = node_->get_f()[i]; return;};
-    void set_f_bd(int i, int j){f_tmp[j] = f_[i]; return;}; 
+    void set_f_bd(int i, int j, int c_i){f_tmp[i] = f_[j] + (c_i / wk[i]) / 11; return;}; 
     void set_f_eq(int i){f_tmp[i] = f_eq[i]; return;};
     void update_f(){for(int i=1; i<velo_dim; i++)f_[i] = f_tmp[i]; return;};
 
