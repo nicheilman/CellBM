@@ -154,6 +154,30 @@ lattice.cpp.s:
 	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/lattice.cpp.s
 .PHONY : lattice.cpp.s
 
+mesh_writer.o: mesh_writer.cpp.o
+.PHONY : mesh_writer.o
+
+# target to build an object file
+mesh_writer.cpp.o:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/mesh_writer.cpp.o
+.PHONY : mesh_writer.cpp.o
+
+mesh_writer.i: mesh_writer.cpp.i
+.PHONY : mesh_writer.i
+
+# target to preprocess a source file
+mesh_writer.cpp.i:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/mesh_writer.cpp.i
+.PHONY : mesh_writer.cpp.i
+
+mesh_writer.s: mesh_writer.cpp.s
+.PHONY : mesh_writer.s
+
+# target to generate assembly for a file
+mesh_writer.cpp.s:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/mesh_writer.cpp.s
+.PHONY : mesh_writer.cpp.s
+
 node.o: node.cpp.o
 .PHONY : node.o
 
@@ -190,6 +214,9 @@ help:
 	@echo "... lattice.o"
 	@echo "... lattice.i"
 	@echo "... lattice.s"
+	@echo "... mesh_writer.o"
+	@echo "... mesh_writer.i"
+	@echo "... mesh_writer.s"
 	@echo "... node.o"
 	@echo "... node.i"
 	@echo "... node.s"

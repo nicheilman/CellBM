@@ -73,6 +73,20 @@ void node::collision(double dt){
 
 for(int i=0; i<velo_dim; i++)
 	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i];
+if(dz_==0.){
+double f_extx, f_exty = 0.;
+double f_extz = 0.;
+      m_[1] += f_extx;
+      m_[2] += f_exty;
+      m_[3] += f_extz;
+      m_[4] += 2.0*(m_[1]*f_extx+m_[2]*f_exty+m_[3]*f_extz)/meq[0];
+      m_[5] += (4.0*m_[1]*f_extx-2.0*(m_[2]*f_exty+m_[3]*f_extz))/meq[0];
+      m_[6] += 2.0*(m_[2]*f_exty-m_[3]*f_extz)/meq[0];
+      m_[7] += (m_[1]*f_exty+m_[2]*f_extx)/meq[0];
+      m_[8] += (m_[3]*f_exty+m_[2]*f_extz)/meq[0];
+      m_[9] += (m_[3]*f_extx+m_[1]*f_extz)/meq[0];
+}
+
 
 return;
 

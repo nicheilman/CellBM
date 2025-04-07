@@ -234,10 +234,17 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/uniform_int_dist.h \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/pstl/glue_algorithm_defs.h \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/pstl/execution_defs.h \
+  /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/fstream \
+  /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/x86_64-pc-linux-gnu/bits/c++io.h \
+  /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/fstream.tcc \
   /mnt/home/heilman7/CellBM/include/lattice.hpp \
   /mnt/home/heilman7/CellBM/include/header.hpp \
-  /mnt/home/heilman7/CellBM/include/node.hpp
+  /mnt/home/heilman7/CellBM/include/node.hpp \
+  /mnt/home/heilman7/CellBM/include/mesh_writer.hpp
 
+
+/opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/pstl/execution_defs.h:
 
@@ -320,6 +327,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/chrono.h:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/nested_exception.h:
+
+/opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/fstream.tcc:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/typeinfo:
 
@@ -404,6 +413,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/type_traits:
+
+/mnt/home/heilman7/CellBM/include/mesh_writer.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -631,6 +642,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
+/opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/fstream:
+
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/range_access.h:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/streambuf.tcc:
@@ -698,6 +711,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 

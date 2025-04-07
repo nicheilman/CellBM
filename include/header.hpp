@@ -7,6 +7,9 @@
 #include <omp.h>
 #include <iostream>
 #include <algorithm>
+#include <fstream>
+#include <stdexcept>
+#include <iomanip>
 
 //#include "lattice.hpp"
 

@@ -1,5 +1,6 @@
 #include "header.hpp"
 #include "lattice.hpp"
+#include "mesh_writer.hpp"
 
 int main(int argc, char** argv){
 
@@ -16,7 +17,7 @@ int main(int argc, char** argv){
 }
 
 
-for(double t=0.; t<5000; t+=dt){
+for(double t=0.; t<50; t+=dt){
 
 for(auto& node_ : L.get_nodes() ){ //  
 
@@ -37,23 +38,18 @@ for(auto& node_ : L.get_nodes()){
 
 if(node_->get_pos()[1] == 0.5){
 //    for(int i=0; i<19; i++){
-        std::cout << node_->get_m()[3]*100 << " " ;
+        std::cout << node_->get_m()[3]*1000 << " " ;
 //        }
         if(node_->get_pos()[2] == dimensions[2])std::cout << std::endl;
       }
 }
 
-/*for(auto& node_ : L.get_nodes()){
- 
-if( node_->get_pos()[1] == 0.5 &&node_->get_pos()[2] == 0.5 ){
-    for(int i=0; i<19; i++){
-	std::cout << node_->get_m()[1] << ", " << node_->get_m()[2] << ", " << node_->get_m()[3] << ", ";
-	}
-        std::cout << std::endl;
-      }
-    }*/
-  }
-    
+MeshWriter::writeVTK("test/test_mesh"+std::to_string(int(t))+".vtk", mesh, L.get_nodes() );
+
+}
+
+//MeshWriter::writeVTK("test/test_mesh.vtk", mesh, L.get_nodes() );
+
 return 0;
 
 }

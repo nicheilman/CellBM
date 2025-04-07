@@ -41,6 +41,7 @@ void lattice::stream(){
 int cx, cy, cz;
 
 for(auto& node_ : node_lst_ ){
+
 for(int i=1; i<num_dir; i++){
     if(node_->get_wallflag() == 0){
 	    int nb_index = (num_nodes + node_->get_idx() - c_i[i][0]*mesh_size_[1]*mesh_size_[2] - c_i[i][1]*mesh_size_[2] - c_i[i][2]) % num_nodes; //Stride length to neighboring nodes
@@ -66,10 +67,10 @@ if(node_->get_wallflag() == 1){
     node_->set_f( node_lst_[nb_index], i );
 
     if(node_->get_pos()[0] == 0.){
-        if(c_i[i][0] == 1){node_->set_f_bd(i, bd_flip(i, 0), c_i[i][2] );}
+        if(c_i[i][0] == 1){node_->set_f_wall(i, bd_flip(i, 0), c_i[i][2] );}
 	 }
     if(node_->get_pos()[0] == domain_size_[0]){
-        if(c_i[i][0] == -1){node_->set_f_bd(i, bd_flip(i, 0), -1*c_i[i][2] );}
+        if(c_i[i][0] == -1){node_->set_f_wall(i, bd_flip(i, 0), -1*c_i[i][2] );}
 	 }
       }
    }
