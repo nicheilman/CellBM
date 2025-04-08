@@ -33,7 +33,7 @@
 
         ofs << "VECTORS " << "Velocity " << "float" << std::endl;
         for (const auto &node : nodes) {
-            ofs << node->get_m()[1] << " " << node->get_m()[2] << " " << node->get_m()[3] << " " << std::endl;
+            ofs << node->get_velocity()[0] << " " << node->get_velocity()[1] << " " << node->get_velocity()[2] << " " << std::endl;
         }
 
 

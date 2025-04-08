@@ -9,7 +9,8 @@ class node: public std::enable_shared_from_this<node>{
     
     const int velo_dim = 19;
     std::array<double, 19> f_, f_tmp, m_, meq, lambda, f_eq; 
-    double dx_, dy_, dz_; 
+    double dx_, dy_, dz_;
+    double p_, u_[3]; 
     double m2;
     int wallflag_, idx_;
 

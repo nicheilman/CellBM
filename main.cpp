@@ -43,9 +43,9 @@ if(node_->get_pos()[1] == 0.5){
         if(node_->get_pos()[2] == dimensions[2])std::cout << std::endl;
       }
 }
-
-MeshWriter::writeVTK("test/test_mesh"+std::to_string(int(t))+".vtk", mesh, L.get_nodes() );
-
+if(t == 0 % 10){
+MeshWriter::writeVTK("test/test_mesh_"+std::to_string(int(t))+".vtk", mesh, L.get_nodes() );
+}
 }
 
 //MeshWriter::writeVTK("test/test_mesh.vtk", mesh, L.get_nodes() );
