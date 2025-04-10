@@ -241,8 +241,12 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
   /mnt/home/heilman7/CellBM/include/lattice.hpp \
   /mnt/home/heilman7/CellBM/include/header.hpp \
   /mnt/home/heilman7/CellBM/include/node.hpp \
+  /mnt/home/heilman7/CellBM/include/IB.hpp \
+  /mnt/home/heilman7/CellBM/include/IB_node.hpp \
   /mnt/home/heilman7/CellBM/include/mesh_writer.hpp
 
+
+/mnt/home/heilman7/CellBM/include/IB_node.hpp:
 
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
@@ -429,6 +433,8 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
 /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/mnt/home/heilman7/CellBM/include/IB.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 

@@ -1,5 +1,6 @@
 #include "header.hpp"
 #include "lattice.hpp"
+#include "IB.hpp"
 #include "mesh_writer.hpp"
 
 int main(int argc, char** argv){
@@ -11,6 +12,7 @@ int main(int argc, char** argv){
     double dt = 1.;
 
     lattice L(dimensions, mesh);
+    IB flag;
 
     for(auto& node_ : L.get_nodes()){
 	node_->ftom(&L, 1);
@@ -43,9 +45,9 @@ if(node_->get_pos()[1] == 0.5){
         if(node_->get_pos()[2] == dimensions[2])std::cout << std::endl;
       }
 }
-if(t == 0 % 10){
+if(int(t) % 10 == 0){
 MeshWriter::writeVTK("test/test_mesh_"+std::to_string(int(t))+".vtk", mesh, L.get_nodes() );
-}
+    }
 }
 
 //MeshWriter::writeVTK("test/test_mesh.vtk", mesh, L.get_nodes() );

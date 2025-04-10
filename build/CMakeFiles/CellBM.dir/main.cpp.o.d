@@ -223,4 +223,6 @@ CMakeFiles/CellBM.dir/main.cpp.o: /mnt/home/heilman7/CellBM/main.cpp \
  /mnt/home/heilman7/CellBM/include/lattice.hpp \
  /mnt/home/heilman7/CellBM/include/header.hpp \
  /mnt/home/heilman7/CellBM/include/node.hpp \
+ /mnt/home/heilman7/CellBM/include/IB.hpp \
+ /mnt/home/heilman7/CellBM/include/IB_node.hpp \
  /mnt/home/heilman7/CellBM/include/mesh_writer.hpp
