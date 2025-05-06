@@ -130,6 +130,54 @@ src/fast:
 	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+IB.o: IB.cpp.o
+.PHONY : IB.o
+
+# target to build an object file
+IB.cpp.o:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB.cpp.o
+.PHONY : IB.cpp.o
+
+IB.i: IB.cpp.i
+.PHONY : IB.i
+
+# target to preprocess a source file
+IB.cpp.i:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB.cpp.i
+.PHONY : IB.cpp.i
+
+IB.s: IB.cpp.s
+.PHONY : IB.s
+
+# target to generate assembly for a file
+IB.cpp.s:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB.cpp.s
+.PHONY : IB.cpp.s
+
+IB_node.o: IB_node.cpp.o
+.PHONY : IB_node.o
+
+# target to build an object file
+IB_node.cpp.o:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB_node.cpp.o
+.PHONY : IB_node.cpp.o
+
+IB_node.i: IB_node.cpp.i
+.PHONY : IB_node.i
+
+# target to preprocess a source file
+IB_node.cpp.i:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB_node.cpp.i
+.PHONY : IB_node.cpp.i
+
+IB_node.s: IB_node.cpp.s
+.PHONY : IB_node.s
+
+# target to generate assembly for a file
+IB_node.cpp.s:
+	cd /mnt/home/heilman7/CellBM/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/IB_node.cpp.s
+.PHONY : IB_node.cpp.s
+
 lattice.o: lattice.cpp.o
 .PHONY : lattice.o
 
@@ -211,6 +259,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src"
+	@echo "... IB.o"
+	@echo "... IB.i"
+	@echo "... IB.s"
+	@echo "... IB_node.o"
+	@echo "... IB_node.i"
+	@echo "... IB_node.s"
 	@echo "... lattice.o"
 	@echo "... lattice.i"
 	@echo "... lattice.s"

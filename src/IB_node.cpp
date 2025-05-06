@@ -1,4 +1,5 @@
-#include "header.hpp"
+//#include "header.hpp"
+#include "IB_node.hpp"
 
 IB_node::IB_node(double dx, double dy, double dz, int idx ){
 

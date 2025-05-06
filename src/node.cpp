@@ -69,13 +69,18 @@ return;
 }
 //--------------------------------------------------------------------//
 
-void node::collision(double dt){
+void node::collision(double dt, double fext[3]){
 
 for(int i=0; i<velo_dim; i++)
 	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i];
-if(dz_==0.){
-double f_extx, f_exty = 0.;
-double f_extz = 0.;
+
+
+double f_extx = fext[0];
+double f_exty = fext[1];
+double f_extz = fext[2];
+
+// if(dz_ == 0.0) m_[3] = 0.1;
+
       m_[1] += f_extx;
       m_[2] += f_exty;
       m_[3] += f_extz;
@@ -85,12 +90,12 @@ double f_extz = 0.;
       m_[7] += (m_[1]*f_exty+m_[2]*f_extx)/meq[0];
       m_[8] += (m_[3]*f_exty+m_[2]*f_extz)/meq[0];
       m_[9] += (m_[3]*f_extx+m_[1]*f_extz)/meq[0];
-}
 
 
 return;
 
 }
+
 
 
 

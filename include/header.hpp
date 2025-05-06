@@ -10,6 +10,7 @@
 #include <fstream>
 #include <stdexcept>
 #include <iomanip>
+#include <cmath>
 
 //#include "lattice.hpp"
 

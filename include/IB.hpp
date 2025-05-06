@@ -7,16 +7,22 @@ class IB{
     protected:
     
     std::vector<std::shared_ptr<IB_node>> IB_node_lst_ = {};
+    int* mesh_size_;
+
+
+    friend class IB_node;
 
     public:
 
-    IB() = default;                         //default constructor
+    IB() = delete;                         //default constructor
     IB(const IB& c) = default;           //copy constructor
-    IB(IB&& c) = default;                 //move constructor
-    IB& operator=(const IB& c) = default; //copy assignment operator
-    IB& operator=(IB&& c) = default;      //move assignment operator 
+    IB(IB&& c) = delete;                 //move constructor
+    IB& operator=(const IB& c) = delete; //copy assignment operator
+    IB& operator=(IB&& c) = delete;      //move assignment operator 
 
+    IB(int mesh_size[3]);
 
+    std::vector<std::shared_ptr<IB_node>> get_IB_nodes(){return IB_node_lst_;};
 
 };
 

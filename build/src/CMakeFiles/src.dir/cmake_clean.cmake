@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/src.dir/IB.cpp.o"
+  "CMakeFiles/src.dir/IB.cpp.o.d"
+  "CMakeFiles/src.dir/IB_node.cpp.o"
+  "CMakeFiles/src.dir/IB_node.cpp.o.d"
   "CMakeFiles/src.dir/lattice.cpp.o"
   "CMakeFiles/src.dir/lattice.cpp.o.d"
   "CMakeFiles/src.dir/mesh_writer.cpp.o"

@@ -16,14 +16,24 @@
 	ofs << "3D Mesh" << std::endl;
 	ofs << "ASCII" << std::endl;
 	ofs << "DATASET STRUCTURED_GRID" << std::endl;
-	ofs << "DIMENSIONS " << mesh[0] << " " << mesh[1] << " " << mesh[2] << " " << std::endl;       
-        
+	ofs << "DIMENSIONS " << mesh[0] << " " << mesh[1] << " " << mesh[2] << " " << std::endl;
+       
         ofs << "POINTS " << nodes.size() << " float\n";
         ofs << std::scientific << std::setprecision(4);
-        for (const auto &node : nodes) {
+/*        for (const auto &node : nodes) {
             ofs << node->get_pos()[0] << " " << node->get_pos()[1] << " " << node->get_pos()[2] << " " << std::endl;
         }
-        
+  */
+
+	for(int k=0; k<mesh[2]; k++){
+            for(int j=0; j<mesh[1]; j++){
+        	for (int i=0; i<mesh[0]; i++){	
+	    	    auto node = nodes[i*mesh[1]*mesh[2]+j*mesh[2]+k];
+            	    ofs << node->get_pos()[0] << " " << node->get_pos()[1] << " " << node->get_pos()[2] << " " << std::endl;
+        	}
+	    }
+	}
+      
 	ofs << "POINT_DATA " << nodes.size() << std::endl;
 	ofs << "SCALARS " << "density " << "float" << std::endl;
 	ofs << "LOOKUP_TABLE " << "default" <<std::endl;

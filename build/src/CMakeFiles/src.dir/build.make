@@ -69,10 +69,38 @@ include src/CMakeFiles/src.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/src.dir/flags.make
 
+src/CMakeFiles/src.dir/IB.cpp.o: src/CMakeFiles/src.dir/flags.make
+src/CMakeFiles/src.dir/IB.cpp.o: /mnt/home/heilman7/CellBM/src/IB.cpp
+src/CMakeFiles/src.dir/IB.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/src.dir/IB.cpp.o"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/IB.cpp.o -MF CMakeFiles/src.dir/IB.cpp.o.d -o CMakeFiles/src.dir/IB.cpp.o -c /mnt/home/heilman7/CellBM/src/IB.cpp
+
+src/CMakeFiles/src.dir/IB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/IB.cpp.i"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/home/heilman7/CellBM/src/IB.cpp > CMakeFiles/src.dir/IB.cpp.i
+
+src/CMakeFiles/src.dir/IB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/IB.cpp.s"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/home/heilman7/CellBM/src/IB.cpp -o CMakeFiles/src.dir/IB.cpp.s
+
+src/CMakeFiles/src.dir/IB_node.cpp.o: src/CMakeFiles/src.dir/flags.make
+src/CMakeFiles/src.dir/IB_node.cpp.o: /mnt/home/heilman7/CellBM/src/IB_node.cpp
+src/CMakeFiles/src.dir/IB_node.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/IB_node.cpp.o"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/IB_node.cpp.o -MF CMakeFiles/src.dir/IB_node.cpp.o.d -o CMakeFiles/src.dir/IB_node.cpp.o -c /mnt/home/heilman7/CellBM/src/IB_node.cpp
+
+src/CMakeFiles/src.dir/IB_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/IB_node.cpp.i"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/home/heilman7/CellBM/src/IB_node.cpp > CMakeFiles/src.dir/IB_node.cpp.i
+
+src/CMakeFiles/src.dir/IB_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/IB_node.cpp.s"
+	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/home/heilman7/CellBM/src/IB_node.cpp -o CMakeFiles/src.dir/IB_node.cpp.s
+
 src/CMakeFiles/src.dir/lattice.cpp.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/lattice.cpp.o: /mnt/home/heilman7/CellBM/src/lattice.cpp
 src/CMakeFiles/src.dir/lattice.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/src.dir/lattice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/src.dir/lattice.cpp.o"
 	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/lattice.cpp.o -MF CMakeFiles/src.dir/lattice.cpp.o.d -o CMakeFiles/src.dir/lattice.cpp.o -c /mnt/home/heilman7/CellBM/src/lattice.cpp
 
 src/CMakeFiles/src.dir/lattice.cpp.i: cmake_force
@@ -86,7 +114,7 @@ src/CMakeFiles/src.dir/lattice.cpp.s: cmake_force
 src/CMakeFiles/src.dir/mesh_writer.cpp.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/mesh_writer.cpp.o: /mnt/home/heilman7/CellBM/src/mesh_writer.cpp
 src/CMakeFiles/src.dir/mesh_writer.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/mesh_writer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/src.dir/mesh_writer.cpp.o"
 	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/mesh_writer.cpp.o -MF CMakeFiles/src.dir/mesh_writer.cpp.o.d -o CMakeFiles/src.dir/mesh_writer.cpp.o -c /mnt/home/heilman7/CellBM/src/mesh_writer.cpp
 
 src/CMakeFiles/src.dir/mesh_writer.cpp.i: cmake_force
@@ -100,7 +128,7 @@ src/CMakeFiles/src.dir/mesh_writer.cpp.s: cmake_force
 src/CMakeFiles/src.dir/node.cpp.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/node.cpp.o: /mnt/home/heilman7/CellBM/src/node.cpp
 src/CMakeFiles/src.dir/node.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/src.dir/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/src.dir/node.cpp.o"
 	cd /mnt/home/heilman7/CellBM/build/src && /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/node.cpp.o -MF CMakeFiles/src.dir/node.cpp.o.d -o CMakeFiles/src.dir/node.cpp.o -c /mnt/home/heilman7/CellBM/src/node.cpp
 
 src/CMakeFiles/src.dir/node.cpp.i: cmake_force
@@ -113,6 +141,8 @@ src/CMakeFiles/src.dir/node.cpp.s: cmake_force
 
 # Object files for target src
 src_OBJECTS = \
+"CMakeFiles/src.dir/IB.cpp.o" \
+"CMakeFiles/src.dir/IB_node.cpp.o" \
 "CMakeFiles/src.dir/lattice.cpp.o" \
 "CMakeFiles/src.dir/mesh_writer.cpp.o" \
 "CMakeFiles/src.dir/node.cpp.o"
@@ -120,12 +150,14 @@ src_OBJECTS = \
 # External object files for target src
 src_EXTERNAL_OBJECTS =
 
+src/libsrc.a: src/CMakeFiles/src.dir/IB.cpp.o
+src/libsrc.a: src/CMakeFiles/src.dir/IB_node.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/lattice.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/mesh_writer.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/node.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/build.make
 src/libsrc.a: src/CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libsrc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/home/heilman7/CellBM/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libsrc.a"
 	cd /mnt/home/heilman7/CellBM/build/src && $(CMAKE_COMMAND) -P CMakeFiles/src.dir/cmake_clean_target.cmake
 	cd /mnt/home/heilman7/CellBM/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 

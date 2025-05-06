@@ -41,7 +41,7 @@ class node: public std::enable_shared_from_this<node>{
 
     void ftom(lattice* L, bool flag);
     void calc_eq();
-    void collision(double dt);
+    void collision(double dt, double fext[3]);
 
 };
 
