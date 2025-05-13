@@ -13,6 +13,10 @@ public:
         static void writeVTK(const std::string &filename,
 			 const int mesh[3],
                          const std::vector<std::shared_ptr<node>> &nodes);
+	static void writeflagVTK(const std::string &filename,
+                         const int mesh[3],
+                         const std::vector<std::shared_ptr<IB_node>> &nodes);
+
 };
 
 

@@ -246,4 +246,5 @@ src/CMakeFiles/src.dir/mesh_writer.cpp.o: \
  /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/tr1/riemann_zeta.tcc \
  /mnt/home/heilman7/CellBM/include/node.hpp \
  /mnt/home/heilman7/CellBM/include/header.hpp \
+ /mnt/home/heilman7/CellBM/include/IB_node.hpp \
  /mnt/home/heilman7/CellBM/include/mesh_writer.hpp

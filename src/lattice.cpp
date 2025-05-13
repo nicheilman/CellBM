@@ -67,10 +67,10 @@ if(node_->get_wallflag() == 1){
     node_->set_f( node_lst_[nb_index], i );
 
     if(node_->get_pos()[0] == 0.){
-        if(c_i[i][0] == 1){node_->set_f_wall(i, bd_flip(i, 0), 0*c_i[i][2] );}
+        if(c_i[i][0] == 1){node_->set_f_wall(i, bd_flip(i, 0), 1*c_i[i][2] );}
 	 }
     if(node_->get_pos()[0] == domain_size_[0]){
-        if(c_i[i][0] == -1){node_->set_f_wall(i, bd_flip(i, 0), -0*c_i[i][2] );}
+        if(c_i[i][0] == -1){node_->set_f_wall(i, bd_flip(i, 0), -1*c_i[i][2] );}
 	 }
       }
    }

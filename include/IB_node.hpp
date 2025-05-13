@@ -25,6 +25,8 @@ class IB_node: public std::enable_shared_from_this<IB_node>{
     std::vector<double> get_pos(){return {dx_, dy_, dz_};};
     int get_idx(){return idx_;};
 
+    void set_pos(std::vector<double> pos){dx_ = pos[0]; dy_ = pos[1]; dz_ = pos[2]; return;}
+
 
 };
 
