@@ -88,7 +88,7 @@
             for(int i=0; i<mesh[0]+1; i++){
                 for (int j=0; j<mesh[1]+1; j++){
                     auto node = nodes[i*(mesh[1]+1)+j];
-                    ofs << node->get_pos()[0] << " " << node->get_pos()[1] << " " << node->get_pos()[2] << " " << std::endl;
+                    ofs << node->get_IB_pos()[0] << " " << node->get_IB_pos()[1] << " " << node->get_IB_pos()[2] << " " << std::endl;
                 }
             }
         

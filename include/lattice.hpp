@@ -11,6 +11,8 @@ class lattice{
     const int num_dir = 19;
     int* mesh_size_;
     double* domain_size_;
+    double dt_;
+    double c;
     int num_nodes;
 
     std::vector<std::shared_ptr<node>> node_lst_ = {};
@@ -87,7 +89,8 @@ static constexpr int c_i[19][3] = { { 0, 0, 0},  // 0
 
 
     lattice( double domain_size[3], 
-	int mesh_size[3] );
+	int mesh_size[3], 
+	double dt );
 
     auto& get_nodes(){return node_lst_;};
     auto get_evector(int i, int j){return evector[i][j];};
@@ -96,9 +99,9 @@ static constexpr int c_i[19][3] = { { 0, 0, 0},  // 0
 
 	int flip_c[3];
 
-	for(int k=0;k<3;k++){flip_c[k] = c_i[i][k];}
+	for(int k=0;k<3;k++){flip_c[k] = -1*c_i[i][k];}
 
-	flip_c[j] = -1*flip_c[j];
+	//flip_c[j] = -1*flip_c[j];
 
 	for(int ii=1; ii<19; ii++){
         	for(int jj=0; jj<3; jj++){
@@ -107,7 +110,7 @@ static constexpr int c_i[19][3] = { { 0, 0, 0},  // 0
                 	if(jj==2) return ii;
         	}
     	    }
-	return 1;
+	return -1;
 	}
 
     void stream();

@@ -1,5 +1,6 @@
 
 #include "lattice.hpp"
+#include "IB.hpp"
 
 node::node(const double dx, const double dy, const double dz, int wall_flag, int idx){
 
@@ -34,6 +35,7 @@ std::fill(std::begin(f_), std::end(f_), 0);
 for(int i=0; i<19; i++){
         for(int j=0; j<19; j++){
                 f_[i] +=   (L->inv_evector[i][j] * m_[j]) / 144;
+if(f_[i] < 0.0) f_[i] = 0.0;
         }
     }
 std::fill(std::begin(f_eq), std::end(f_eq), 0);
@@ -71,15 +73,16 @@ return;
 
 void node::collision(double dt, double fext[3]){
 
-for(int i=0; i<velo_dim; i++)
-	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i] / 2;
+for(int i=4; i<velo_dim; i++)
+	m_[i] += -1.0 * (m_[i] - meq[i]) * dt * lambda[i] ;
+
 
 
 double f_extx = fext[0];
 double f_exty = fext[1];
 double f_extz = fext[2];
 
-//if(dz_ == 0.0) f_extz = 0.01;
+if(dz_ == 0.0) f_extz = 0.01;
 //if(dz_ == 2.0) f_extz = -0.01;
 
       m_[1] += f_extx;
@@ -96,6 +99,8 @@ double f_extz = fext[2];
 return;
 
 }
+
+
 
 
 

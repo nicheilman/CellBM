@@ -1320,7 +1320,9 @@ src/CMakeFiles/src.dir/node.cpp.o: /mnt/home/heilman7/CellBM/src/node.cpp \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/tr1/poly_hermite.tcc \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/tr1/poly_laguerre.tcc \
   /opt/software-current/2023.06/x86_64/amd/zen2/software/GCCcore/12.3.0/include/c++/12.3.0/tr1/riemann_zeta.tcc \
-  /mnt/home/heilman7/CellBM/include/node.hpp
+  /mnt/home/heilman7/CellBM/include/node.hpp \
+  /mnt/home/heilman7/CellBM/include/IB.hpp \
+  /mnt/home/heilman7/CellBM/include/IB_node.hpp
 
 
 /mnt/home/heilman7/CellBM/src/node.cpp:
