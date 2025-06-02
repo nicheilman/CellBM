@@ -8,14 +8,18 @@ int main(int argc, char** argv){
 
  cout << fixed << setprecision(1);
 
-    int mesh_size = 21;
+ // Need a function to read in these parameters // 
+    int mesh_size = 31;
     double dimensions[3] = {1.0, 1.0, 1.0};
+    double dt = 0.1;
+ // ------------------------------------------- //
+
     int mesh[3] = {int(mesh_size*dimensions[0]), int(mesh_size*dimensions[1]), int(mesh_size*dimensions[2])};
     int flag_mesh[3] = {2*mesh[0], 2*mesh[1], 0}; // Must be ~2x the fluid mesh spacing
-    double dt = 0.1;
     double force[3] = {0., 0., 0.};
     double mesh_space = 1.0/mesh_size ; 
     double dist, dist_x, dist_y, dist_z, kernel;
+    bool internal;
  
     lattice L(dimensions, mesh, dt);
     IB flag(flag_mesh);
@@ -27,7 +31,7 @@ int main(int argc, char** argv){
 }
 
 /* --- Main Loop --- */
-for(double t=0.; t<150; t+=dt){
+for(double t=0.; t<100; t+=dt){
 
 	cout << t << endl;
 
@@ -37,28 +41,34 @@ for(auto& node_ : L.get_nodes() ){ //
 
     node_->calc_eq();
 
-force[0] = 0.; force[1] = 0.; force[2] = 0.;
+force[0] = 0.; force[1] = 0.; force[2] = 0.; kernel = 0.; internal = false;
 
-//----------------------------------------------------------------------
-if( (node_->get_pos()[2] > 0.3) && (node_->get_pos()[2] < 0.7) ){
+//----------------Needs to be converted to own function------------------------
+
+// Only fluid nodes near the IB need to be looked at //
+// Will be best to use Bounding Box //
+if( (node_->get_pos()[2] > 0.35 - 2*mesh_space) && (node_->get_pos()[2] < 0.65 + 2*mesh_space) 
+	&& (node_->get_pos()[1] > 0.35 - 2*mesh_space) && (node_->get_pos()[1] < 0.65 + 2*mesh_space) ){
 for(auto& IB_node_ : flag.get_IB_nodes() ) {
-    dist_x = abs(node_->get_pos()[0] - IB_node_->get_IB_pos()[0]) ;
-    dist_y = abs(node_->get_pos()[1] - IB_node_->get_IB_pos()[1]) ;
-    dist_z = abs(node_->get_pos()[2] - IB_node_->get_IB_pos()[2]) ;
+    dist_x = (node_->get_pos()[0] - IB_node_->get_IB_pos()[0]) ;
+    dist_y = (node_->get_pos()[1] - IB_node_->get_IB_pos()[1]) ;
+    dist_z = (node_->get_pos()[2] - IB_node_->get_IB_pos()[2]) ;
 
+// Internal nodes are treated as solid, Do not need IB consideration //
+    if(pow( node_->get_pos()[1] - 0.5, 2 ) + pow( node_->get_pos()[2] - 0.5, 2 ) <= 0.15*0.15) internal = true;
+    if(internal) continue;
 
     dist = dist_x*dist_x + dist_y*dist_y + dist_z*dist_z;
     dist = sqrt(dist);
-    //dist = sqrt( pow(node_->get_pos()[0] - IB_node_->get_pos()[0], 2) + pow(node_->get_pos()[1] - IB_node_->get_pos()[1], 2) + pow(node_->get_pos()[2] - IB_node_->get_pos()[2], 2) );
     if(dist <= 2*mesh_space ){
 	kernel = (1 - abs( dist_x/mesh_space/2)) * (1 - abs( dist_y/mesh_space/2)) * (1 - abs( dist_z/mesh_space/2));
-	for(int i=0; i<3; i++) force[i] = -2*node_->get_m()[i+1]/node_->get_m()[0] * kernel * dt / mesh_space ;
+	for(int i=0; i<3; i++) force[i] = -1*node_->get_m()[i+1]/node_->get_m()[0] * kernel; 
 	}
     }
 }
 //----------------------------------------------------------------------
 
-    node_->collision(dt, force);
+    node_->collision(dt, force, internal);
 
     node_->ftom(&L, 1);
 }
@@ -72,7 +82,7 @@ for(auto& node_ : L.get_nodes()){
 /* --- Visualize --- */
 if(node_->get_pos()[0] == 0.5){
 //    for(int i=0; i<19; i++){
-        cout << node_->get_m()[3]*1000 << " " ;
+        cout << node_->get_m()[3]/node_->get_m()[0]*10000 << " " ;
 //        }
         if(node_->get_pos()[2] == dimensions[2]) cout << endl;
       }

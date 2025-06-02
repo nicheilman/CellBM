@@ -37,12 +37,12 @@ class node: public std::enable_shared_from_this<node>{
 
     void set_f(std::shared_ptr<node> node_, int i){f_tmp[i] = node_->get_f()[i]; return;};
     void set_f_wall(int i, int j, double c_i){f_tmp[i] = f_[j] + (c_i / wk[i]); return;}; 
-    void set_f_p(int i, int j, int c_i){f_tmp[i] = -1*f_[j] - (c_i / wk[i]); return;};
+    void set_f_p(int i, int j, int c_i){f_tmp[i] = f_eq[i]; return;};
     void update_f(){for(int i=1; i<velo_dim; i++)f_[i] = f_tmp[i]; return;};
 
     void ftom(lattice* L, bool flag);
     void calc_eq();
-    void collision(double dt, double fext[3]);
+    void collision(double dt, double fext[3], bool internal);
 
 };
 
