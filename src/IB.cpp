@@ -4,16 +4,17 @@
 
 IB::IB(
 
-    int mesh_size[3]
-
+    int mesh_size[3],
+    double com[3]
 ){
 
 double PI = 4*std::atan(1);
 mesh_size_ = mesh_size;
+com_ = com;
 for(int i=0; i<mesh_size_[0]+1; i++){
         for(int j=0; j<mesh_size_[1]+1; j++){
             for (int k=0; k<mesh_size_[2]+1; k++){
-		IB_node_lst_.push_back(std::make_shared<IB_node>( i*(1.2/mesh_size[0]) -0.1, 0.15*cos(j*(2*PI/mesh_size[1]) )+0.5, -0.15*sin(j*(2*PI/mesh_size[1]) )+0.5, i*mesh_size_[1]+j));
+		IB_node_lst_.push_back(std::make_shared<IB_node>( i*(1.2/mesh_size[0])+com_[0]-0.1, 0.15*cos(j*(2*PI/mesh_size[1]) )+com_[1], -0.15*sin(j*(2*PI/mesh_size[1]) )+com_[2], i*mesh_size_[1]+j));
 
             }
         }

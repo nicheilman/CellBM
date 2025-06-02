@@ -13,6 +13,7 @@ class node: public std::enable_shared_from_this<node>{
     double dx_, dy_, dz_;
     double p_, u_[3]; 
     double m2;
+    bool internal_;
     int wallflag_, idx_;
 
     static constexpr double wk[19] = {3., 18., 18., 18., 18., 18., 18., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36., 36.};
@@ -26,7 +27,7 @@ class node: public std::enable_shared_from_this<node>{
     node& operator=(node&& c) = default;      //move assignment operator 
 
 
-    node( double dx, double dy, double dz, int wallflag, int idx);
+    node( double dx, double dy, double dz, int wallflag, bool internal, int idx);
 
     auto get_f(){return f_;};
     auto get_m(){return m_;};

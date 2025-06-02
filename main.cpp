@@ -9,11 +9,12 @@ int main(int argc, char** argv){
  cout << fixed << setprecision(1);
 
  // Need a function to read in these parameters // 
-    int mesh_size = 31;
+    int mesh_size = 11;
     double dimensions[3] = {1.0, 1.0, 1.0};
     double dt = 0.1;
  // ------------------------------------------- //
 
+    double IB_CoM[3] = {0.0, 0.5*dimensions[1], 0.5*dimensions[2]};
     int mesh[3] = {int(mesh_size*dimensions[0]), int(mesh_size*dimensions[1]), int(mesh_size*dimensions[2])};
     int flag_mesh[3] = {2*mesh[0], 2*mesh[1], 0}; // Must be ~2x the fluid mesh spacing
     double force[3] = {0., 0., 0.};
@@ -22,7 +23,7 @@ int main(int argc, char** argv){
     bool internal;
  
     lattice L(dimensions, mesh, dt);
-    IB flag(flag_mesh);
+    IB flag(flag_mesh, IB_CoM);
 
     for(auto& node_ : L.get_nodes()){
 	node_->calc_eq();

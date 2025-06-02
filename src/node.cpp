@@ -2,7 +2,7 @@
 #include "lattice.hpp"
 #include "IB.hpp"
 
-node::node(const double dx, const double dy, const double dz, int wall_flag, int idx){
+node::node(const double dx, const double dy, const double dz, int wall_flag, bool internal, int idx){
 
 f_ = {0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
 m_ = {1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
@@ -12,6 +12,7 @@ dx_ = dx;
 dy_ = dy;
 dz_ = dz;
 wallflag_ = wall_flag;
+internal_ = internal;
 idx_ = idx;
 
 }
