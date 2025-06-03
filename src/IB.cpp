@@ -28,5 +28,6 @@ return (node->get_pos()[2] > com_[2] - rad_ - 2*mesh_space) && (node->get_pos()[
         && (node->get_pos()[1] > com_[1] - rad_ - 2*mesh_space) && (node->get_pos()[1] < com_[1] + rad_ + 2*mesh_space);}
 
 bool IB::is_internal(std::shared_ptr<node> node){
-return (std::pow( node->get_pos()[1] - com_[1],2) + std::pow(node->get_pos()[2] - com_[2],2) <= rad_*rad_) && !node->get_internal();}
+return ( ((std::pow( node->get_pos()[1] - com_[1],2) + std::pow(node->get_pos()[2] - com_[2],2) <= rad_*rad_) && !node->get_internal())
+	|| ((std::pow( node->get_pos()[1] - com_[1],2) + std::pow(node->get_pos()[2] - com_[2],2) > rad_*rad_) && node->get_internal()) );}
 

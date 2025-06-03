@@ -29,6 +29,11 @@ class IB{
     bool in_bbox(std::shared_ptr<node> node, double mesh_space);
     bool is_internal(std::shared_ptr<node> node);
 
+    void update_pos(std::vector<double> pos){
+	for(int i=0; i<3; i++) com_[i] = com_[i] + pos[i];
+	for(auto& IB_node_ : IB_node_lst_) IB_node_->update_node_pos(pos);
+    }
+
 };
 
 
