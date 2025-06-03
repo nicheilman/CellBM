@@ -9,17 +9,17 @@ int main(int argc, char** argv){
  cout << fixed << setprecision(1);
 
  // Need a function to read in these parameters // 
-    int mesh_size = 31;
-    double dimensions[3] = {1.0, 1.0, 1.0};
+    int mesh_size = 11;
+    double dimensions[3] = {1.0, 1.0, 3.0};
     double dt = 0.1;
  // ------------------------------------------- //
 
-    double IB_CoM[3] = {0.0, 0.5*dimensions[1], 0.1*dimensions[2]};
+    double IB_CoM[3] = {0.0, 0.5*dimensions[1], 0.5*dimensions[2]};
     double IB_r = 0.15;
     int mesh[3] = {int(mesh_size*dimensions[0]), int(mesh_size*dimensions[1]), int(mesh_size*dimensions[2])};
     int flag_mesh[3] = {2*mesh[0], 2*mesh[1], 0}; // Must be ~2x the fluid mesh spacing
     double force[3] = {0., 0., 0.};
-    vector<double> velo = {0., 0., 0.1};
+    vector<double> velo = {0., 0., 0.};
     vector<double> shift = {0., 0., 0.};
     double mesh_space = 1.0/mesh_size ; 
     double dist, dist_x, dist_y, dist_z, kernel;
@@ -34,7 +34,7 @@ int main(int argc, char** argv){
 }
 
 /* --- Main Loop --- */
-for(double t=0.; t<100; t+=dt){
+for(double t=0.; t<1000; t+=dt){
 
 	cout << t << endl;
 
@@ -85,13 +85,13 @@ for(auto& node_ : L.get_nodes()){
     node_->update_f();
 
 
-/* --- Visualize --- /
+/* --- Visualize --- */
 if(node_->get_pos()[0] == 0.5){
 //    for(int i=0; i<19; i++){
         cout << node_->get_m()[3]/node_->get_m()[0]*10 << " " ;
 //        }
         if(node_->get_pos()[2] == dimensions[2]) cout << endl;
-      }*/
+      }
 }
 
 //---------------------------------------------------------------------
@@ -99,6 +99,7 @@ if(node_->get_pos()[0] == 0.5){
 for(int i=0; i<3; i++) shift[i]=velo[i]*dt;
 flag.update_pos(shift);
 
+//if(t > 5.) velo[2] = 0.1;
 //---------------------------------------------------------------------
 
 

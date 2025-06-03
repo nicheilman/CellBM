@@ -84,7 +84,7 @@ double f_extx = fext[0];
 double f_exty = fext[1];
 double f_extz = fext[2];
 
-//if(dz_ == 0.0) f_extz = 0.0002;
+if(dz_ == 0.0) meq[3] = 1.0;
 
 if(!internal){
       m_[1] += f_extx;

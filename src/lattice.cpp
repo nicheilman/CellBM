@@ -68,10 +68,10 @@ if(node_->get_wallflag() == 1){
     if( (node_->get_pos()[2] == 0.) && (c_i[i][2] == 1) ){cz = (mesh_size_[2] - 1);}
     else if( (node_->get_pos()[2] == domain_size_[2]) && (c_i[i][2] == -1) ){cz = -1*(mesh_size_[2] - 1);}
     else{cz = -1*c_i[i][2];}
-    
+ 
     nb_index = (node_->get_idx() + cx*mesh_size_[1]*mesh_size_[2] + cy*mesh_size_[2] + cz);
     node_->set_f( node_lst_[nb_index], i ); 
-
+/*
     if(node_->get_pos()[0] == 0.){
         if(c_i[i][0] == 1){node_->set_f_wall(i, bd_flip(i, 0), 0.0*c_i[i][2]/c );} 
 	 }
@@ -89,17 +89,17 @@ if(node_->get_pos()[1] == 0.){
 	if(c_i[i][1] == 0){node_->set_f_wall(i, bd_flip(i, 2), -0.0*c_i[i][2]/c );}
          }
 //-------------
-
-/*-------------
+*/
+//-------------
 
 if(node_->get_pos()[2] == 0.){
-        if(c_i[i][2] == 1){node_->set_f_p(i, bd_flip(i, 2), 0.0*c_i[i][2]/c );}
+        if(c_i[i][2] == 1){node_->set_f_p(i, node_lst_[node_->get_idx()]);}
          }
     if(node_->get_pos()[2] == domain_size_[2]){
-        if(c_i[i][2] == -1){node_->set_f_p(i, bd_flip(i, 2), -0.0*c_i[i][2]/c );}
+        if(c_i[i][2] == -1){node_->set_f(node_lst_[node_->get_idx()-1], i);}
          }
 
-//-------------*/
+//-------------
 
       }
    }
